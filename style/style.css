@@ -1,0 +1,71 @@
+body{
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+.header-div{
+    display: flex;
+    max-height: 30%;
+}
+
+.header-logo{
+    flex: 0 0 10%;
+}
+
+.header-logo img{
+    padding-left: 5%;
+    width: 80%;
+    height: auto;
+}
+
+.header-logo img:hover {
+    transform: scale(1.1);
+}
+
+.header-links{
+    flex: 0 0 88%;
+    padding-left: 2%;
+    padding-top: 3%;
+}
+
+.horizontal-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.horizontal-list li {
+    margin-right: 20px;
+}
+
+.horizontal-list li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.horizontal-list li a:hover {
+    text-decoration: underline;
+}
+
+.home{
+    width: 100vw;
+    height: 100vh; /* Ensures the .home div takes the full height of the viewport */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    background-color: green;
+    overflow: hidden; /* Prevents vertical scrolling */
+}
+
+.home-content {
+    text-align: center; /* Ensures text is centered inside its container */
+    padding-bottom: 15%;
+    font-size: 200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
