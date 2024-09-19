@@ -1,12 +1,12 @@
 version: '3'
 services:
-  web1:
-    image: my-nginx-container  # Use the pre-built image
-    container_name: web1_container
-    ports:
-      - "8081:80"
-    volumes:
-      - ./webpage1/style/style.css:/usr/share/nginx/html/style.css  
+  # web1:
+  #   image: my-nginx-container  # Use the pre-built image
+  #   container_name: web1_container
+  #   ports:
+  #     - "8081:80"
+  #   volumes:
+  #     - ./webpage1/style/style.css:/usr/share/nginx/html/style.css  
 
   web2:
     image: my-nginx-container  # Use the pre-built image
