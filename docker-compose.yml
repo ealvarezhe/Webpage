@@ -1,41 +1,41 @@
 version: '3'
 services:
   web1:
-    build: ./webpage1
+    image: my-nginx-container  # Use the pre-built image
     container_name: web1_container
     ports:
       - "8081:80"
     volumes:
-      - ./webpage1:/usr/share/nginx/html
+      - ./webpage1/style/style.css:/usr/share/nginx/html/style.css  
 
   web2:
-    build: ./webpage2
+    image: my-nginx-container  # Use the pre-built image
     container_name: web2_container
     ports:
       - "8082:80"
     volumes:
-      - ./webpage2:/usr/share/nginx/html
+      - ./webpage2/style/style.css:/usr/share/nginx/html/style.css  
 
   web3:
-    build: ./webpage3
+    image: my-nginx-container  # Use the pre-built image
     container_name: web3_container
     ports:
       - "8083:80"
     volumes:
-      - ./webpage3:/usr/share/nginx/html
+      - ./webpage3/style/style.css:/usr/share/nginx/html/style.css  
 
   web4:
-    build: ./webpage4
+    image: my-nginx-container  # Use the pre-built image
     container_name: web4_container
     ports:
       - "8084:80"
     volumes:
-      - ./webpage4:/usr/share/nginx/html
+      - ./webpage4/style/style.css:/usr/share/nginx/html/style.css  
 
   web5:
-    build: ./webpage5
+    image: my-nginx-container  # Use the pre-built image
     container_name: web5_container
     ports:
       - "8085:80"
     volumes:
-      - ./webpage5:/usr/share/nginx/html
+      - ./webpage5/style/style.css:/usr/share/nginx/html/style.css  
