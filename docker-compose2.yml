@@ -1,0 +1,51 @@
+#
+# ----------------------------------------------
+#           EA Computers r. 2024
+#            Ensuring Access
+# ----------------------------------------------
+
+#     For inquiries or support, visit:
+#     https://www.eacomputers.com/support
+
+#     Contact Us:
+#     Email: support@eacomputers.com
+#     Phone: +1-800-555-EA01
+
+#     This software is proprietary and confidential.
+#     Unauthorized copying, modification, or distribution
+#     is strictly prohibited.
+# ----------------------------------------------
+#
+
+
+version: '3'
+services:
+  web1:
+    image: my-nginx-container
+    container_name: web_container_1
+    ports:
+      - "8081:80"  
+
+  web2:
+    image: my-nginx-container
+    container_name: web_container_2
+    ports:
+      - "8082:80" 
+
+  web3:
+    image: my-nginx-container
+    container_name: web_container_3
+    ports:
+      - "8083:80"
+
+  web4:
+    image: my-nginx-container
+    container_name: web_container_4
+    ports:
+      - "8084:80" 
+
+  web5:
+    image: my-nginx-container
+    container_name: web_container_5
+    ports:
+      - "8085:80" 
