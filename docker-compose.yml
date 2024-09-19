@@ -14,7 +14,7 @@ services:
     ports:
       - "8082:80"
     volumes:
-      - ./webpage2/style/style.css:/usr/share/nginx/html/style.css  
+      - ./webpage2/style/style.css:/usr/share/nginx/html/style/style.css  
 
   web3:
     image: my-nginx-container  # Use the pre-built image
@@ -22,7 +22,7 @@ services:
     ports:
       - "8083:80"
     volumes:
-      - ./webpage3/style/style.css:/usr/share/nginx/html/style.css  
+      - ./webpage3/style/style.css:/usr/share/nginx/html/style/style.css  
 
   web4:
     image: my-nginx-container  # Use the pre-built image
@@ -30,7 +30,7 @@ services:
     ports:
       - "8084:80"
     volumes:
-      - ./webpage4/style/style.css:/usr/share/nginx/html/style.css  
+      - ./webpage4/style/style.css:/usr/share/nginx/html/style/style.css  
 
   web5:
     image: my-nginx-container  # Use the pre-built image
@@ -38,4 +38,4 @@ services:
     ports:
       - "8085:80"
     volumes:
-      - ./webpage5/style/style.css:/usr/share/nginx/html/style.css  
+      - ./webpage5/style/style.css:/usr/share/nginx/html/style/style.css  
