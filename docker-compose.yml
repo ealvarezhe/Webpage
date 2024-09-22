@@ -21,6 +21,35 @@
 version: '3'
 services:
   web1:
+    image: my-nginx-container
+    container_name: web_container_1
+    ports:
+      - "8081:80"  
+
+  web2:
+    image: my-nginx-container
+    container_name: web_container_2
+    ports:
+      - "8082:80" 
+
+  web3:
+    image: my-nginx-container
+    container_name: web_container_3
+    ports:
+      - "8083:80"
+
+  web4:
+    image: my-nginx-container
+    container_name: web_container_4
+    ports:
+      - "8084:80" 
+
+  web5:
+    image: my-nginx-container
+    container_name: web_container_5
+    ports:
+      - "8085:80" 
+  web6:
     image: my-nginx-container  # Use the pre-built image
     container_name: web1_container
     ports:
@@ -28,7 +57,7 @@ services:
     volumes:
       - ./webpage1/style/style.css:/usr/share/nginx/html/style/style.css  
 
-  web2:
+  web7:
     image: my-nginx-container  # Use the pre-built image
     container_name: web2_container
     ports:
@@ -36,7 +65,7 @@ services:
     volumes:
       - ./webpage2/style/style.css:/usr/share/nginx/html/style/style.css  
 
-  web3:
+  web8:
     image: my-nginx-container  # Use the pre-built image
     container_name: web3_container
     ports:
@@ -44,7 +73,7 @@ services:
     volumes:
       - ./webpage3/style/style.css:/usr/share/nginx/html/style/style.css  
 
-  web4:
+  web9:
     image: my-nginx-container  # Use the pre-built image
     container_name: web4_container
     ports:
@@ -52,7 +81,7 @@ services:
     volumes:
       - ./webpage4/style/style.css:/usr/share/nginx/html/style/style.css  
 
-  web5:
+  web10:
     image: my-nginx-container  # Use the pre-built image
     container_name: web5_container
     ports:
