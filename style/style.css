@@ -19,7 +19,6 @@
 
 
 body{
-    background-color: red;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -87,4 +86,9 @@ body{
     padding-bottom: 15%;
     font-size: 200%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#center-image {
+    width: 20%;
+    height: auto;
 }
